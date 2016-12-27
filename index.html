@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Un exemple simple de formulaire</title>
+</head>
+<body>
+
+<H1>Exemple simple de formulaire utilisant l'interface CGI</H1>
+<P>
+Ceci est un formulaire simple qui illustre l'utilisation de
+la bibliothèque de fonctions CGI permettant de traiter
+les informations saisies dans les zones de dialogue.
+</P>
+<HR>
+
+
+<form method="post" action="formulaire-simple.cgi">
+<H2>Questionnaire</H2>
+Quel est votre prénom ? <input name="prenom">
+<P>
+Quel est votre nom ? <input name="nom">
+<P>
+Quelle est votre couleur favorite ?
+ <select name="couleur">
+ <option selected>blanc
+ <option>jaune
+ <option>orange
+ <option>rouge
+ <option>vert
+ <option>bleu
+ <option>violet
+ <option>noir
+ </select>
+<P>
+
+
+Aimez vous l'informatique ?
+<input type="radio" name="choix" value="oui" checked> Oui
+ou
+<input type="radio" name="choix" value="non"> Non
+<P>
+
+
+Veuillez expliquer brièvement ci-dessous le choix que vous venez de faire :
+<input name="message" size=60,5>
+<P>
+
+
+Cliquez sur <input type="submit" value="Valider"> pour soumettre votre requête.,
+ sinon <input type="reset" value="Annuler">
+</form>
+
+
+<address>Philippe Dax / dax@inf.enst.fr</address>
+$Date: 20/09/1995 $
+
+
+</body>
+</html>
